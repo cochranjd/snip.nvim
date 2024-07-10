@@ -13,6 +13,7 @@ local function create_and_open_file()
 
 	-- Combine directory and file name to get the full path
 	local file_name = string.gsub(topic, " ", "-")
+	file_name = string.lower(file_name)
 	local file_path = directory .. file_name .. ".md"
 
 	-- Create the file
